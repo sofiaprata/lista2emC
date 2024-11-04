@@ -1,0 +1,30 @@
+nclude <stdio.h>
+
+//3. Escreva um programa que leia um numero inteiro e positivo F e calcule o fatorial deste numero.
+
+unsigned long long fatorial(int n) {
+    if (n < 0) {
+        printf("Fatorial não definido para números negativos.\n");
+        return 0;
+    }
+
+    unsigned long long resultado = 1;
+    for (int i = 1; i <= n; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
+int main() {
+    int numero;
+
+    printf("Digite um número inteiro não negativo para calcular o fatorial: ");
+    scanf("%d", &numero);
+
+    unsigned long long resultado = fatorial(numero);
+    if (resultado != 0) {
+        printf("O fatorial de %d é %llu.\n", numero, resultado);
+    }
+
+    return 0;
+}
