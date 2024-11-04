@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+//1.Implemente um programa que tenha como entrada um numero (1-7) que corresponde a um dos dias da semana e imprima na tela o nome do dia correspondente (domingo, segunda, terca, quarta, quinta,sexta, sabado). Se o numero lido nao estiver no intervalo 1-7, imprima: “Numero de dia nao valido”.O programa deve permanecer executando ate que o usuario tecle o numero 0.(Utilize obrigatoriamente teste no inıcio).
+
+void identificarnumerodia(){
+    int numero;
+    do{
+        printf("Digite um número de 1 a 7 (Digite 0 para finalizar o programa.):");
+        scanf("%d", &numero);
+
+    switch(numero){
+        case 1:
+        printf("Dia da semana %d corresponde a DOMINGO.\n", numero);
+        break;
+        case 2:
+        printf("Dia da semana %d corresponde a SEGUNDA-FEIRA.\n", numero);
+        break;
+        case 3:
+        printf("Dia da semana %d corresponde a TERÇA-FEIRA.\n", numero);
+        break;
+        case 4:
+        printf("Dia da semana %d corresponde a QUARTA-FEIRA.\n", numero);
+        break;
+        case 5:
+        printf("Dia da semana %d corresponde a QUINTA-FEIRA.\n", numero);
+        break;
+        case 6:
+        printf("Dia da semana %d corresponde a SEXTA-FEIRA.\n", numero);
+        break;
+        case 7:
+        printf("Dia da semana %d corresponde a SABADO.\n", numero);
+        break;
+        case 0:
+        printf("FINALIZANDO...\n");
+        break;
+        default:
+        printf("Número inválido.\n");
+        break;
+        }
+    } while (numero != 0);
+}
+
+int main(){
+    identificarnumerodia();
+    return 0;
+}
