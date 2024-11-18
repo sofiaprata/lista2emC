@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void determinarmaioremenor(){
+    int maior,menor;
+
+    printf("Digite um valor: ");
+    scanf("%d", &maior);
+    printf("Digite outro valor: ");
+    scanf("%d", &menor);
+
+    if (maior > menor){
+        printf("O maior número é: %d\n O menor número é: %d", maior,menor);
+    }
+}
+
+int main(){
+    determinarmaioremenor();
+    return 0;
+}
