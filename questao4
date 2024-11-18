@@ -1,0 +1,26 @@
+//4. Implementar um programa para resolver o seguinte problema: Jose tem 150 centımetros e cresce 2 cent́ımetros por ano. O Pedro tem 110 centımetros e cresce 3 centımetros por ano. Em quantos anos Pedro ser ́a maior que Jose?
+#include <stdio.h>
+
+void resolveraltura(){
+    int alturaJose = 150;
+    int alturaPedro = 110; 
+    int contAno = 0;    
+
+    printf("Altura inicial de José: %dcm \n", alturaJose);
+    printf("Altura inicial de JPedro: %dcm \n", alturaPedro);
+
+    while (alturaPedro <= alturaJose){
+
+        alturaJose += 2;
+        alturaPedro += 3;
+        contAno ++;
+    }
+
+    printf("Pedro será maior que José em %d anos.", contAno);
+
+}
+
+int main (){
+    resolveraltura();
+    return 0;
+}
